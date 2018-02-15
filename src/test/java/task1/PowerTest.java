@@ -9,6 +9,7 @@ public class PowerTest {
     @Test
     public void power() throws Exception {
         final Power power = new Power();
+        assertThat(power.calculate(21,13), is(154472377739119461L));
         assertThat(power.calculate(2,8), is(256L));
         assertThat(power.calculate(2,10), is(1024L));
         assertThat(power.calculate(10,10), is(10000000000L));
